@@ -1,0 +1,70 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  /* Header */
+  .app-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px; /* Fixed height of the header */
+    z-index: 1000; /* Ensure header stays on top */
+  }
+
+  /* Footer */
+  .app-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 70px; /* Fixed height for the footer */
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure footer stays on top */
+  }
+
+  /* Main content area */
+  .app-content {
+    /* Calculate the available height:
+       100vh total viewport height
+       minus 60px for the header
+       minus 70px for the footer */
+    height: calc(100vh - 60px - 60px);
+    margin-top: 60px; /* Push content below the fixed header */
+    padding: 16px;
+    background: #f9f9f9;
+    overflow-y: auto; /* Scrollable content area */
+  }
+  @media (min-width: 569px) {
+    .app-footer {
+      display: none; /* hide the footer on larger screens */
+    }
+  }
+  @media (max-width: 768px) {
+    .app-header {
+      height: 60px; /* Adjust header height if needed */
+    }
+
+    .app-footer {
+      height: 60px; /* Adjust footer height on mobile */
+    }
+
+    .app-content {
+      /* Recalculate height for smaller screens if header/footer changed */
+      height: calc(100vh - 60px - 90px);
+      padding: 12px;
+    }
+  }
+}
