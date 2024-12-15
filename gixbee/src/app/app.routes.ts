@@ -1,10 +1,6 @@
 import { Routes } from '@angular/router';
 import { LoginComponent } from './auth/login/login.component';
 import { LayoutComponent } from './layout/layout.component';
-import { CategoriesComponent } from './modules/categories/categories/categories.component';
-import { SettingsComponent } from './modules/setting/settings/settings.component';
-import { OrdersComponent } from './modules/order/orders/orders.component';
-import { HomeComponent } from './modules/home/home/home.component';
 
 export const routes: Routes = [
     {
@@ -25,9 +21,9 @@ export const routes: Routes = [
                   import("./modules/order/orders.route").then((c) => c.ordersRoutes),
               },
               {
-                path: "setting",
+                path: "accounts",
                 loadChildren: () =>
-                  import("./modules/setting/setting.route").then((c) => c.settingRoutes),
+                  import("./modules/accounts/accounts.route").then((c) => c.accountsRoutes),
               },
               {
                 path: "categories",
