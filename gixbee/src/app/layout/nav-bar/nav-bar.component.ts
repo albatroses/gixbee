@@ -24,7 +24,7 @@ export class NavBarComponent implements OnInit {
     { label: 'Home', icon: 'home', route: '/app/home' },
     { label: 'Categories', icon: 'categories', route: '/app/categories' },
     { label: 'Orders', icon: 'orders', route: '/app/orders' },
-    { label: 'Settings', icon: 'setting', route: '/app/setting' },
+    { label: 'Accounts', icon: 'accounts', route: '/app/accounts' },
   ];
 
   ngOnInit(): void {

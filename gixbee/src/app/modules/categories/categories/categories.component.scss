@@ -1,0 +1,66 @@
+/* categories.component.scss */
+.category {
+  background-color: #fafafa; // light background for each category
+  border-radius: 8px; // rounded corners for category containers
+  padding: 15px; // padding around the content
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1); // subtle shadow for depth
+
+  &:last-child {
+    margin-bottom: 0; // remove bottom margin for the last category
+  }
+}
+
+.category h2 {
+    font-size: 18px;
+    color: #1a1a1a; // slightly lighter than black for a softer appearance
+    padding-bottom: 5px;
+    border-bottom: 2px solid #eee; // subtle line under the category name
+    margin-bottom: 15px; // more space between the title and icons
+  }
+  
+  
+  .services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; // center align the services for better aesthetics
+  }
+  
+  .service {
+    margin: 10px 15px; // provide some vertical space as well
+    flex: 1 1 120px; // ensure services take up at least 120px width but can grow
+  }
+  
+  
+  .service img {
+    width: 50px;
+    height: auto;
+  }
+  
+  .service span {
+    display: block;
+    font-size: 14px; // ensure text is neither too small nor too large
+    color: #333; // dark grey for better readability
+    margin-top: 8px; // space between icon and text
+  }
+  
+  /* categories.component.scss */
+
+/* Enhance icon appearance with shadows and a transition for hover effects */
+.service i {
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    background-size: cover; // use 'cover' instead of 'contain' to fill the entire area
+    display: inline-block;
+    vertical-align: middle;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); // subtle shadow
+    border-radius: 10px; // rounded corners
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+    &:hover {
+      transform: scale(1.1); // scale up icons on hover
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3); // deeper shadow on hover
+    }
+  }
+  

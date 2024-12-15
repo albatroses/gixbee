@@ -102,45 +102,6 @@
     }
   }
   
-  /* Dynamic Icon Classes */
-/* Dynamic Icon Classes */
-.icon-home {
-  background: url('/icons/home.svg') no-repeat center;
-  background-size: contain;
-}
-.icon-home-active {
-  background: url('/icons/home-active.svg') no-repeat center;
-  background-size: contain;
-}
-
-.icon-setting {
-  background: url('/icons/settings.svg') no-repeat center;
-  background-size: contain;
-}
-.icon-setting-active {
-  background: url('/icons/settings-active.svg') no-repeat center;
-  background-size: contain;
-}
-
-.icon-orders {
-  background: url('/icons/order_history.svg') no-repeat center;
-  background-size: contain;
-}
-.icon-orders-active {
-  background: url('/icons/order_history-active.svg') no-repeat center;
-  background-size: contain;
-}
-
-.icon-categories {
-  background: url('/icons/small_icons.svg') no-repeat center;
-  background-size: contain;
-}
-.icon-categories-active {
-  background: url('/icons/categories-active.svg') no-repeat center;
-  background-size: contain;
-}
-
-  
   @keyframes pulse {
     0% {
       transform: scale(1);

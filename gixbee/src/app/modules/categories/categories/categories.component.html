@@ -1,1 +1,11 @@
-<p>categories works!</p>
+<!-- categories.component.html -->
+<div *ngFor="let category of categories" class="category">
+    <h2>{{ category.name }}</h2>
+    <div class="services">
+      <div *ngFor="let service of category.services" class="service">
+        <i [class]="service.iconClass" aria-hidden="true"></i>
+        <span>{{ service.name }}</span>
+      </div>
+    </div>
+  </div>
+  
