@@ -1,10 +1,17 @@
 <nav class="navbar" *ngIf="isMobile">
-    <!-- Nav items container -->
-    <ul class="nav-items">
-      <li *ngFor="let item of navItems;  let i = index" routerLink="{{ item.route }}" routerLinkActive="active"   [class.active]="selectedIndex === i" (click)="setActiveIndex(i)"  > 
-        <div class="icon-wrapper" [ngClass]="'icon-' + item.icon"></div>
+  <!-- Nav items container -->
+  <ul class="nav-items">
+    <li *ngFor="let item of navItems; let i = index">
+      <!-- Using button for each navigation item -->
+      <button type="button"
+              routerLink="{{ item.route }}"
+              routerLinkActive="active"
+              [class.active]="selectedIndex === i"
+              (click)="setActiveIndex(i)"
+              class="nav-button">
+              <div class="icon-wrapper" [class]="getClass(item.icon, i)"></div>
         <span class="label">{{ item.label }}</span>
-      </li>
-    </ul>
-  </nav>
-  
+      </button>
+    </li>
+  </ul>
+</nav>

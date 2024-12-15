@@ -22,9 +22,9 @@ export class NavBarComponent implements OnInit {
 
   navItems = [
     { label: 'Home', icon: 'home', route: '/app/home' },
-    { label: 'Settings', icon: 'setting', route: '/app/setting' },
-    { label: 'Orders', icon: 'orders', route: '/app/orders' },
     { label: 'Categories', icon: 'categories', route: '/app/categories' },
+    { label: 'Orders', icon: 'orders', route: '/app/orders' },
+    { label: 'Settings', icon: 'setting', route: '/app/setting' },
   ];
 
   ngOnInit(): void {
@@ -32,7 +32,9 @@ export class NavBarComponent implements OnInit {
       this.checkWindowSize();
     }
   }
-
+  getClass(icon: string, index: number): string {
+    return this.selectedIndex === index ? `icon-${icon}-active` : `icon-${icon}`;
+  }
   private checkWindowSize() {
     if (isPlatformBrowser(this.platformId)) {
       this.isMobile = window.innerWidth <= 768;
