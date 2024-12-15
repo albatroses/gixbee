@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24pt" height="24pt" viewBox="0 0 24 24" version="1.1">
+<g id="surface1">
+<path style="fill:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke:#5B5B5B;stroke-opacity:1;stroke-miterlimit:4;" d="M 19 20 L 5 20 C 4.449219 20 4 19.550781 4 19 L 4 5 C 4 4.449219 4.449219 4 5 4 L 19 4 C 19.550781 4 20 4.449219 20 5 L 20 19 C 20 19.550781 19.550781 20 19 20 Z "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:#5B5B5B;fill-opacity:0.301961;" d="M 19 20 L 5 20 C 4.449219 20 4 19.550781 4 19 L 4 5 C 4 4.449219 4.449219 4 5 4 L 19 4 C 19.550781 4 20 4.449219 20 5 L 20 19 C 20 19.550781 19.550781 20 19 20 Z "/>
+<path style="fill:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke:#5B5B5B;stroke-opacity:1;stroke-miterlimit:4;" d="M 7 12 L 9 12 "/>
+<path style="fill:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke:#5B5B5B;stroke-opacity:1;stroke-miterlimit:4;" d="M 7 8 L 9 8 "/>
+<path style="fill:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke:#5B5B5B;stroke-opacity:1;stroke-miterlimit:4;" d="M 7 16 L 9 16 "/>
+<path style="fill:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke:#5B5B5B;stroke-opacity:1;stroke-miterlimit:4;" d="M 11 12 L 13 12 "/>
+<path style="fill:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke:#5B5B5B;stroke-opacity:1;stroke-miterlimit:4;" d="M 11 8 L 13 8 "/>
+<path style="fill:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke:#5B5B5B;stroke-opacity:1;stroke-miterlimit:4;" d="M 11 16 L 13 16 "/>
+<path style="fill:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke:#5B5B5B;stroke-opacity:1;stroke-miterlimit:4;" d="M 15 12 L 17 12 "/>
+<path style="fill:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke:#5B5B5B;stroke-opacity:1;stroke-miterlimit:4;" d="M 15 8 L 17 8 "/>
+<path style="fill:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke:#5B5B5B;stroke-opacity:1;stroke-miterlimit:4;" d="M 15 16 L 17 16 "/>
+</g>
+</svg>

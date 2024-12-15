@@ -49,11 +49,32 @@
         }
   
         /* Add the animation outside the media query so it always applies */
-        &.active .icon-wrapper {
-          animation: pulse 1.5s infinite;
-        }
+        // &.active .icon-wrapper {
+        //   animation: pulse 1.5s infinite;
+        // }
       }
     }
+    .nav-items .nav-button {
+      background: none;
+      border: none;
+      width: 100%; /* Adjust based on your design */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 8px 0;
+      color: inherit; /* Ensures text inherits the color from parent */
+    }
+    
+    .nav-items .nav-button:focus {
+      outline: none; /* Optionally replace with a more visually appealing focus indicator */
+    }
+    .nav-items .nav-button.active .icon-wrapper,
+.nav-items .nav-button.active .label {
+  color: #6200ee; /* Example color for active state */
+}
+
   }
   
   /* Media Query Adjustments (desktop view) */
@@ -82,27 +103,43 @@
   }
   
   /* Dynamic Icon Classes */
-  .icon-home {
-    background: url('/icons/001-home.svg') no-repeat center;
-    background-size: contain;
-  }
-  .icon-home.active {
-    filter: invert(33%) sepia(86%) saturate(3163%) hue-rotate(210deg) brightness(94%) contrast(94%);
-  }
-  .icon-setting {
-    background: url('/icons/149-cog.svg') no-repeat center;
-    background-size: contain;
-  }
-  
-  .icon-orders {
-    background: url('/icons/177-truck.svg') no-repeat center;
-    background-size: contain;
-  }
-  
-  .icon-categories {
-    background: url('/icons/492-categories.svg') no-repeat center;
-    background-size: contain;
-  }
+/* Dynamic Icon Classes */
+.icon-home {
+  background: url('/icons/home.svg') no-repeat center;
+  background-size: contain;
+}
+.icon-home-active {
+  background: url('/icons/home-active.svg') no-repeat center;
+  background-size: contain;
+}
+
+.icon-setting {
+  background: url('/icons/settings.svg') no-repeat center;
+  background-size: contain;
+}
+.icon-setting-active {
+  background: url('/icons/settings-active.svg') no-repeat center;
+  background-size: contain;
+}
+
+.icon-orders {
+  background: url('/icons/order_history.svg') no-repeat center;
+  background-size: contain;
+}
+.icon-orders-active {
+  background: url('/icons/order_history-active.svg') no-repeat center;
+  background-size: contain;
+}
+
+.icon-categories {
+  background: url('/icons/small_icons.svg') no-repeat center;
+  background-size: contain;
+}
+.icon-categories-active {
+  background: url('/icons/categories-active.svg') no-repeat center;
+  background-size: contain;
+}
+
   
   @keyframes pulse {
     0% {
